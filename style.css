@@ -21,10 +21,17 @@ div.wrapper{
     background-color: orangered;
 }
 
-
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+#Historia > .wrapper{
+    background-color: orangered;
+}
+
+#utövare > .wrapper{
+    background-color: beige;
 }
 
