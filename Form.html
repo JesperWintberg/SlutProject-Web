@@ -10,23 +10,25 @@
         <h1> Formulär </h1>
     </header>
     <nav>
-        <ul class="topnav">
-            <li><a class="active" href="/index.html">Home</a></li>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/Sport1/Start.html">Ishockey</a></li>
             <li><a href="/Sport2/Start2.html">Motor GP</a></li>
             <li><a href="/Form.html">form</a></li>
-            <li class="right"><a href="/info.html">Om oss</a></li>
-          </ul>
+            <li><a href="/info.html">Om oss</a></li>
+        </ul>
     </nav>
     <main>
         <h2> Ge förslag på sporter du vill see </h2>
         <form>
             <label for="namn">Namn</label><br>
-            <input type="text" id="namn" name="namn"><br>
+            <input type="text" name="namn"><br>
             <label for="land">Vilken land kommer du ifån?</label><br>
-            <input type="text" id="land"name="land"><br>
+            <input type="text"name="land"><br>
             <label for="email">Email</label><br>
-            <input type="email" name="email" id="email"><br>
+            <input type="email" name="email"><br>
+            <label for="text"> förslag</label> <br>
+            <input type="text" name="text">
             <br><br>
             <button type="submit" onclick="alert('Tack för ditt förslag')">Submit</button><br>
         </form>

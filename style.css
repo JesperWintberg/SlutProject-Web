@@ -29,35 +29,48 @@ footer{
     grid-area: footer;
 }
 
+img{
+    margin-top: 30px;
+}
+
 /* Nav bar (nav bar är tagen fårn https://www.w3schools.com/css/css_navbar_horizontal.asp) */
 
-
-body {margin: 0;}
-
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray; 
 }
 
-ul.topnav li {float: left;}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+ul li{
+    float: left;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none; 
+    font-size: 25px;
+}
 
-ul.topnav li a.active {background-color: #04AA6D;}
+li:nth-child(5){
+    float: right;
+}
 
-ul.topnav li.right {float: right;}
 
+
+/* Main */
+#main >.wrapper{
+    background-color: whitesmoke;
+}
+
+/* Start */
+ #Start >.wrapper{
+    background-color: aliceblue;
+ }
 
 /* Historia */
 #Historia img{
@@ -76,14 +89,16 @@ ul.topnav li.right {float: right;}
 }
 
 
+
+
 @media screen and(max-width:600px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
 
     body{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 40px auto 80px;
         grid-template-areas: 
         "header" "header"
         "nav" "nav"
