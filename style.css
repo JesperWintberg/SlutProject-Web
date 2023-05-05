@@ -34,9 +34,8 @@ img{
 }
 
 /* Nav bar (nav bar är tagen fårn https://www.w3schools.com/css/css_navbar_horizontal.asp) */
-
 ul{
-    list-style-type: none;
+    list-style-type: none;                              
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -61,6 +60,27 @@ li:nth-child(5){
 }
 
 
+/* Tabel */
+table{
+    border-spacing: 0ch;
+    margin-left: 49%;
+    margin-right: 30%;
+}
+
+
+/* Form */
+textarea{
+    width: 25%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 4px;
+    background-color:#f8f8f8 ;
+    font-size: 16px;
+    resize: none;
+}
+
 
 /* Main */
 #main >.wrapper{
@@ -80,7 +100,7 @@ li:nth-child(5){
 }
 
 #Historia > .wrapper{
-    background-color: aqua;
+    background-color: whitesmoke;
 }
 
 /* Utövare */
