@@ -3,10 +3,10 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
+    "header header header"
+    "nav nav nav"
+    "main main aside "
+    "footer footer footer";
     text-align: center;
     margin: 0;
 
@@ -25,12 +25,18 @@ main{
     grid-area: main;
 }
 
+aside{
+    grid-area: aside;
+    
+}
+
 footer{
     grid-area: footer;
 }
 
 img{
     margin-top: 30px;
+    border-radius: 2%;
 }
 
 /* Nav bar (nav bar är tagen fårn https://www.w3schools.com/css/css_navbar_horizontal.asp) */
@@ -63,7 +69,7 @@ li:nth-child(5){
 /* Tabel */
 table{
     border-spacing: 0ch;
-    margin-left: 49%;
+    margin-left: 41%;
     margin-right: 30%;
 }
 
@@ -111,20 +117,4 @@ textarea{
 
 
 
-@media screen and(max-width:600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
 
-    body{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 60px 40px auto 80px;
-        grid-template-areas: 
-        "header" "header"
-        "nav" "nav"
-        "main" "main"
-        "footer""footer";
-        text-align: center;
-        margin: 0;
-    }
-}
