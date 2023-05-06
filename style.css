@@ -5,7 +5,7 @@ body{
     grid-template-areas:
     "header header header"
     "nav nav nav"
-    "main main aside "
+    "main aside main "
     "footer footer footer";
     text-align: center;
     margin: 0;
@@ -24,6 +24,7 @@ nav{
 main{
     grid-area: main;
 }
+
 
 aside{
     grid-area: aside;
@@ -93,6 +94,11 @@ textarea{
     background-color: whitesmoke;
 }
 
+#main img{
+    height: 50%;
+    width: 50%;
+}
+
 /* Start */
  #Start >.wrapper{
     background-color: aliceblue;
@@ -113,6 +119,10 @@ textarea{
 #utövare img{
     width: 50vh;
 }
+
+
+
+
 
 
 
