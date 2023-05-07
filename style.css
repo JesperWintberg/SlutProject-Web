@@ -1,12 +1,12 @@
 body{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-    "header header header"
-    "nav nav nav"
-    "main aside main "
-    "footer footer footer";
+    "header"
+    "nav"
+    "main"
+    "footer";
     text-align: center;
     margin: 0;
 
@@ -91,7 +91,16 @@ textarea{
 
 /* Main */
 #main >.wrapper{
-    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+    text-align: center;
+    margin: 0;
 }
 
 #main img{
@@ -100,14 +109,56 @@ textarea{
 }
 
 /* Start */
- #Start >.wrapper{
-    background-color: aliceblue;
- }
+ #Start section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "section1 section2 section3";
+    text-align: center;
+}
+
+#Start img{
+    height: 25vh;
+}
+
+#Start div:nth-child(1){
+    grid-area: section1;
+}
+
+#Start div:nth-child(2){
+    grid-area: section2;
+}
+
+#Start div:nth-child(3){
+    grid-area: section3;
+} 
 
 /* Historia */
+#Historia section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "section1 section2 section3";
+    text-align: center;
+}
+
+#Historia div:nth-child(1){
+    grid-area: section1;
+}
+
+#Historia div:nth-child(2){
+    grid-area: section2;
+}
+
+#Historia div:nth-child(3){
+    grid-area: section3;
+} 
+
 #Historia img{
-    height: 50%;
-    width: 50%;
+    height: 40vh;
+    width: 30vw;
 
 }
 
@@ -116,12 +167,31 @@ textarea{
 }
 
 /* Utövare */
+#utövare section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "section1 section2 section3";
+    text-align: center;
+}
+
+#utövare div:nth-child(1){
+    grid-area: section1;
+}
+#uövare div:nth-child(2){
+    grid-area: section2;
+}
+#utövare div:nth-child(3){
+    grid-area: section3;
+}
+
+
 #utövare img{
     width: 50vh;
 }
 
-/* Info */
-
+/* Info */ 
 #info img{
     width: 50vh;
 }
