@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 <body id="form">
     <div class="wrapper">
@@ -20,20 +20,40 @@
             </ul>
         </nav>
         <main>
-            <h2> Ge förslag på sporter du vill see </h2>
-            <form>
+            <h2> Formulär </h2>
+            <p>
+                För att vi ska kunna utveckla Sport fokus så behöver vi din hjälp. HAr du en sport som du känner att vi borde lyfta upp
+                eller som du bara tycker är rolig? Skriv in ditt förslag i vårat fomulär så kommer vi ta en tit och see om sporten passar
+                våran hemisda. Kom ihåg att vi inte kan ha alla sporter på hemisdan så om din sport inte lyfts upp så behöver du inte vara lesen.
+            </p>
+            <img src="/Bilder/hide-the-pain-harold.jpg" alt="Hide the pain harold">
+        </main>
+        <aside>
+            <h3> Ge förslag på sporter du vill see </h3>
+            <!--<form> skapar ett formulär-->
+            <!--<method = "post"> säger till hemsidan att schika info direkt till servern-->
+            <form method="post">
+                <!--<label> skapar en rubrik för varje fråga-->
                 <label for="namn">Namn</label><br>
+                <!--<input> Skapar en fråga i fromuläret-->
+                <!--<type> defenierar frågan i fromuläret-->
                 <input type="text" name="namn"><br>
                 <label for="land">Vilken land kommer du ifån?</label><br>
                 <input type="text"name="land"><br>
                 <label for="email">Email</label><br>
                 <input type="email" name="email"><br>
                 <label for="texara"> Skriv Här </label><br>
+                <!--<textarea> gör en större skriv yta-->
                 <textarea> Förslag.... </textarea>
                 <br><br>
+                <!--<button> gör en knapp för att kunna schika in formuläret-->
+                <!--<onklick="alert()" skapar ett medelande som printar när man schikar-->
                 <button type="submit" onclick="alert('Tack för ditt förslag')">Submit</button><br>
             </form>
-        </main>
+        </aside>
+        <footer>
+            <h4> Skapad av Jesper Wintberg </h4>    
+        </footer>
     </div>
 </body>
 </html>

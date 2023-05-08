@@ -12,6 +12,11 @@ body{
 
 }
 
+@font-face{
+    src: url(/fonts/font/Sigmar-Regular.ttf);
+    font-family: fonts;
+}
+
 /* Misc */
 header{
     grid-area: header;
@@ -70,7 +75,7 @@ li:nth-child(5){
 /* Tabel */
 table{
     border-spacing: 0ch;
-    margin-left: 41%;
+    margin-left: 20%;
     margin-right: 30%;
 }
 
@@ -86,6 +91,23 @@ textarea{
     background-color:#f8f8f8 ;
     font-size: 16px;
     resize: none;
+}
+
+#form img{
+    width: 25vw;
+}
+
+#form >.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+    text-align: center;
+    margin: 0;
 }
 
 
@@ -124,6 +146,7 @@ textarea{
 
 #Start div:nth-child(1){
     grid-area: section1;
+    font-family: fonts;
 }
 
 #Start div:nth-child(2){
