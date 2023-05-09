@@ -1,23 +1,12 @@
-body{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "footer";
-    text-align: center;
-    margin: 0;
 
-}
-
+/* Lägger till en "custom" font */
 @font-face{
     src: url(/fonts/font/Sigmar-Regular.ttf);
     font-family: fonts;
 }
 
 /* Misc */
+/* Placerar alla olika delar på rätt ställe i grid */
 header{
     grid-area: header;
 }
@@ -40,33 +29,48 @@ footer{
     grid-area: footer;
 }
 
+/* Almäna regler för img */
 img{
     margin-top: 30px;
     border-radius: 2%;
 }
 
 /* Nav bar (nav bar är tagen fårn https://www.w3schools.com/css/css_navbar_horizontal.asp) */
+/* ul stil för listan */
 ul{
-    list-style-type: none;                              
+    /* Tar bord "prickarna" framför list elementen */
+    list-style-type: none; 
+    /* tar bort utrymmet melan list element */                             
     margin: 0;
+    /* Tar bort utrymet it listan */
     padding: 0;
+    /* Håller allt inerhåll inanför listan */
     overflow: hidden;
+    /* ändrar bakgrundsfärgen */
     background-color: gray; 
 }
 
+/* flyttar list text till vänster */
 ul li{
     float: left;
 }
 
 ul li a{
+    /* gör texten till en block element */
     display: block;
+    /* ändrar text färgen till vit */
     color: white;
+    /* flyttar texten till mitten */
     text-align: center;
+    /* lägger till mellanrum mellan text */
     padding: 18px 20px;
+    /* tar bort sträck och färg under länk */
     text-decoration: none; 
+    /* Ändar storleken på text */
     font-size: 25px;
 }
 
+/* Flyttar den femte text elemtet till höger */
 li:nth-child(5){
     float: right;
 }
@@ -74,6 +78,7 @@ li:nth-child(5){
 
 /* Tabel */
 table{
+    /* Flyttar på tabellen på sport 2 start */
     border-spacing: 0ch;
     margin-left: 20%;
     margin-right: 30%;
@@ -85,19 +90,24 @@ textarea{
     width: 25%;
     height: 150px;
     padding: 12px 20px;
+    /* lägger till linje runt textytan */
     box-sizing: border-box;
+    /* skapar en linje runt textrutan */
     border: 2px solid;
     border-radius: 4px;
     background-color:#f8f8f8 ;
     font-size: 16px;
+    /* tar bort möjligheten att ändra storleken på textområdets */
     resize: none;
 }
 
 #form img{
+    /* ändrar storleken på bilden på form sidan */
     width: 25vw;
 }
 
 #form >.wrapper{
+    /* Skapar en grid till form */
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
@@ -113,6 +123,7 @@ textarea{
 
 /* Main */
 #main >.wrapper{
+    /* Skapar en grid till index */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -126,8 +137,7 @@ textarea{
 }
 
 #main img{
-    height: 50%;
-    width: 50%;
+    width: 30vw;
 }
 
 /* Start */
