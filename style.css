@@ -79,8 +79,8 @@ li:nth-child(5){
 /* Tabel */
 table{
     /* Flyttar på tabellen på sport 2 start */
-    border-spacing: 0ch;
-    margin-left: 20%;
+    border-spacing: 0;
+    margin-left: 0%;
     margin-right: 30%;
 }
 
@@ -110,7 +110,7 @@ textarea{
     /* Skapar en grid till form */
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
     "header header"
     "nav nav"
@@ -126,7 +126,7 @@ textarea{
     /* Skapar en grid till index */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
     "header header"
     "nav nav"
@@ -137,11 +137,13 @@ textarea{
 }
 
 #main img{
+    /* ändrar storleken på img på index */
     width: 30vw;
 }
 
 /* Start */
- #Start section{
+#Start section{
+    /* skapar ett eget grid för att kunna ha 3 spalt layout */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
@@ -155,7 +157,9 @@ textarea{
 }
 
 #Start div:nth-child(1){
+    /* Ger div ett possitionene section 1  */
     grid-area: section1;
+    /* ändrar fontsen i div 1 */ 
     font-family: fonts;
 }
 
@@ -196,6 +200,7 @@ textarea{
 }
 
 #Historia > .wrapper{
+    /* ändrar bakfrundsfärger */
     background-color: whitesmoke;
 }
 
