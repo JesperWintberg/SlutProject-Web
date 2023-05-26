@@ -34,21 +34,21 @@
             <!--<method = "post"> säger till hemsidan att schika info direkt till servern-->
             <form method="post">
                 <!--<label> skapar en rubrik för varje fråga-->
-                <label for="namn">Namn</label><br>
+                <label for="namn" id="namn">Namn</label><br>
                 <!--<input> Skapar en fråga i fromuläret-->
                 <!--<type> defenierar frågan i fromuläret-->
-                <input type="text" name="namn"><br>
-                <label for="land">Vilken land kommer du ifån?</label><br>
-                <input type="text"name="land"><br>
-                <label for="email">Email</label><br>
-                <input type="email" name="email"><br>
+                <input type="text" name="namn" id="namn"><br>
+                <label for="land" id="land">Vilken land kommer du ifån?</label><br>
+                <input type="text"name="land" id="land"><br>
+                <label for="email" id="email">Email</label><br>
+                <input type="email" name="email"id="email"><br>
                 <label for="texara"> Skriv Här </label><br>
                 <!--<textarea> gör en större skriv yta-->
                 <textarea> Förslag.... </textarea>
                 <br><br>
                 <!--<button> gör en knapp för att kunna schika in formuläret-->
                 <!--<onklick="alert()" skapar ett medelande som printar när man schikar-->
-                <button type="submit" onclick="alert('Tack för ditt förslag')">Submit</button><br>
+                <button type="submit">Submit</button><br>
             </form>
         </aside>
         <footer>
