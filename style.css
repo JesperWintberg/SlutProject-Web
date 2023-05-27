@@ -1,3 +1,15 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+    text-align: center;
+    margin: 0;
+}
 
 /* Lägger till en "custom" font */
 @font-face{
@@ -87,8 +99,8 @@ li:nth-child(5){
 table{
     /* Flyttar på tabellen på sport 2 start */
     border-spacing: 0;
-    margin-left: 0%;
-    margin-right: 30%;
+    margin-left: 25%;
+    font-size: 20px;
 }
 
 
@@ -132,13 +144,14 @@ textarea{
 #main >.wrapper{
     /* Skapar en grid till index */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas:
-    "header header"
-    "nav nav"
-    "main aside"
-    "footer footer";
+    "header"
+    "nav"
+    "main" 
+    "aside"
+    "footer";
     text-align: center;
     margin: 0;
 }
@@ -149,56 +162,16 @@ textarea{
 }
 
 /* Start */
-#Start section{
-    /* skapar ett eget grid för att kunna ha 3 spalt layout */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "section1 section2 section3";
-    text-align: center;
-}
 
 #Start img{
-    height: 25vh;
+    height: 40vh;
 }
-
-#Start div:nth-child(1){
-    /* Ger div ett possitionene section 1  */
-    grid-area: section1;
-    /* ändrar fontsen i div 1 */ 
-    font-family: fonts;
+#Start {
+    background-color:#C0C0C0;
 }
-
-#Start div:nth-child(2){
-    grid-area: section2;
-}
-
-#Start div:nth-child(3){
-    grid-area: section3;
-} 
 
 /* Historia */
-#Historia section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "section1 section2 section3";
-    text-align: center;
-}
 
-#Historia div:nth-child(1){
-    grid-area: section1;
-}
-
-#Historia div:nth-child(2){
-    grid-area: section2;
-}
-
-#Historia div:nth-child(3){
-    grid-area: section3;
-} 
 
 #Historia img{
     height: 40vh;
@@ -212,28 +185,9 @@ textarea{
 }
 
 /* Utövare */
-#utövare section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "section1 section2 section3";
-    text-align: center;
-}
-
-#utövare div:nth-child(1){
-    grid-area: section1;
-}
-#uövare div:nth-child(2){
-    grid-area: section2;
-}
-#utövare div:nth-child(3){
-    grid-area: section3;
-}
-
 
 #utövare img{
-    width: 50vh;
+    width: 25vw;
 }
 
 /* Info */ 
