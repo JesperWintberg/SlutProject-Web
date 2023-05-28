@@ -32,23 +32,40 @@
             <h3> Ge förslag på sporter du vill see </h3>
             <!--<form> skapar ett formulär-->
             <!--<method = "post"> säger till hemsidan att schika info direkt till servern-->
-            <form method="post">
-                <!--<label> skapar en rubrik för varje fråga-->
-                <label for="namn" id="namn">Namn</label><br>
-                <!--<input> Skapar en fråga i fromuläret-->
-                <!--<type> defenierar frågan i fromuläret-->
-                <input type="text" name="namn" id="namn"><br>
-                <label for="land" id="land">Vilken land kommer du ifån?</label><br>
-                <input type="text"name="land" id="land"><br>
-                <label for="email" id="email">Email</label><br>
-                <input type="email" name="email"id="email"><br>
-                <label for="texara"> Skriv Här </label><br>
-                <!--<textarea> gör en större skriv yta-->
-                <textarea> Förslag.... </textarea>
-                <br><br>
-                <!--<button> gör en knapp för att kunna schika in formuläret-->
-                <!--<onklick="alert()" skapar ett medelande som printar när man schikar-->
-                <button type="submit">Submit</button><br>
+            <!--action schikar användare till hemsidan tack.html efter dom har svarat på forum-->
+            <form action="tack.html" method="post">
+                <!--Sections gör så att vi kan dela upp form inuti css-->
+                <section>
+                    <label for="fname">Förnamn:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="Ename">Efternamn:</label><br>
+                    <input type="text" id="Ename" name="Ename"><br>
+                    <label for="email"> Skriv in din email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="lösenord">Lösenord:</label><br>
+                    <input type="password" id="lösenord" name="lösenord">
+
+                    <p> Vad tycker du om hemsidan? </p>
+                    <input type="radio" id="bra" name="rew" value="bra">
+                    <label for="bra">Bra</label><br>
+                    <input type="radio" id="dåligt" name="rew" value="dåligt">
+                    <label for="dåligt">Dåligt</label><br>
+                    <input type="radio" id="ok" name="rew" value="ok">
+                    <label for="ok">Helt okej</label><br>   
+                </section>
+                <section>
+                    <p> Vilka sidor har du läst? </p>
+                    <input type="checkbox" id="Start" name="Start" value="sidor">
+                    <label for="Start"> Jag har sätt start sidorna </label><br>
+                    <input type="checkbox" id="sidor1" name="sidor1" value="sidor1">
+                    <label for="sidor1"> Jag har läst Moto GP </label><br>
+                    <input type="checkbox" id="sidor2" name="sidor2" value="Sidor2">
+                    <label for="sidor2"> Jag har läst Fotbolls sidor</label> <br><br>
+    
+                    <label for="textarea"> Förslag om sport: </label><br>
+                    <textarea id="textarea" name="textarea" > Skriv ditt förslag här.... </textarea><br>
+                    <input type="submit" value="Submit">
+                </section>
             </form>
         </aside>
         <footer>

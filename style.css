@@ -1,4 +1,8 @@
-body{
+
+/* Skapar ett grid för sidorna #start, Historia och utövare */
+#Start >.wrapper,
+#Historia >.wrapper,
+#utövare >.wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto;
@@ -11,6 +15,97 @@ body{
     margin: 0;
 }
 
+/* Tar bort margin bodyn och griden  */
+body{
+    margin: 0;
+}
+/* Ändrar storleken på bilder på olika sidor */
+#Start img{
+    width: 40vw;
+}
+
+#Historia img{
+    width: 30vw;
+}
+
+#utövare img{
+    width: 30vw;
+}
+
+#main img{
+    width: 50vw;
+}
+
+#form img{
+    /* ändrar storleken på bilden på form sidan */
+    width: 25vw;
+}
+
+/* Ändrar bakgrundsfärgen på start sidorna */
+#Start >.wrapper{
+    background-color: #a9a9a9;
+}
+
+
+/* Skapar ett nytt grid för dom 3 "start" sidorna */
+#main >.wrapper,
+#form >.wrapper,
+#info >.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "aside aside"
+    "footer footer";
+    text-align: center;
+    margin: 0;
+}
+
+/* Skapar ett nytt grid inuti form, så att man kan dela upp aside sectionen i två delar  */
+#form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "section1 section2";
+}
+
+/* Ger dom två sections i form en indivuel plats i gridet */
+#form section:nth-child(1){
+    grid-area: section1;
+}
+
+#form section:nth-child(2){
+    grid-area: section2;
+}
+
+/* Delar upp aside i två delar så att man kan lägga mer info */
+#main aside{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "section1 section2";
+}
+
+#main section:nth-child(1){
+    grid-area: section1;
+}
+
+#main section:nth-child(2){
+    grid-area: section2;
+}
+
+
+/* Ändrar font på h1,h2 på start sidrona  */
+#Start h1,h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
 /* Lägger till en "custom" font */
 @font-face{
     src: url(/fonts/font/Sigmar-Regular.ttf);
@@ -18,8 +113,8 @@ body{
 }
 
 /* iframe */
-
 iframe{
+    /* Ändrar storleken på iframe */
     height: 20em;
     width: 35em;
 }
@@ -90,7 +185,7 @@ ul li a{
 }
 
 /* Flyttar den femte text elemtet till höger */
-li:nth-child(5){
+nav li:nth-child(5){
     float: right;
 }
 
@@ -109,8 +204,6 @@ textarea{
     width: 25%;
     height: 150px;
     padding: 12px 20px;
-    /* lägger till linje runt textytan */
-    box-sizing: border-box;
     /* skapar en linje runt textrutan */
     border: 2px solid;
     border-radius: 4px;
@@ -120,84 +213,8 @@ textarea{
     resize: none;
 }
 
-#form img{
-    /* ändrar storleken på bilden på form sidan */
-    width: 25vw;
-}
 
-#form >.wrapper{
-    /* Skapar en grid till form */
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-    "header header"
-    "nav nav"
-    "main aside"
-    "footer footer";
-    text-align: center;
-    margin: 0;
-}
-
-
-/* Main */
-#main >.wrapper{
-    /* Skapar en grid till index */
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-    "header"
-    "nav"
-    "main" 
-    "aside"
-    "footer";
-    text-align: center;
-    margin: 0;
-}
-
-#main img{
-    /* ändrar storleken på img på index */
-    width: 30vw;
-}
-
-/* Start */
-
-#Start img{
-    height: 40vh;
-}
-#Start {
-    background-color:#C0C0C0;
-}
-
-/* Historia */
-
-
-#Historia img{
-    height: 40vh;
-    width: 30vw;
-
-}
-
-#Historia > .wrapper{
-    /* ändrar bakfrundsfärger */
-    background-color: whitesmoke;
-}
-
-/* Utövare */
-
-#utövare img{
-    width: 25vw;
-}
-
-/* Info */ 
-#info img{
-    width: 50vh;
-}
-
-
-
-
+ 
 
 
 
