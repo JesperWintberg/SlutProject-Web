@@ -37,8 +37,11 @@ body{
 }
 
 #form img{
-    /* ändrar storleken på bilden på form sidan */
-    width: 25vw;
+    width: 50vw;
+}
+
+#info img{
+    width: 50vw;
 }
 
 /* Ändrar bakgrundsfärgen på start sidorna */
@@ -102,7 +105,7 @@ body{
 
 /* Ändrar font på h1,h2 på start sidrona  */
 #Start h1,h2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:fonts;
 }
 
 
