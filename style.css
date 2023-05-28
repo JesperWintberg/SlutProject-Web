@@ -20,33 +20,29 @@ body{
     margin: 0;
 }
 /* Ändrar storleken på bilder på olika sidor */
+
+#Historia img,
+#utövare img{
+    width: 25vw;
+}
+
+#main img,
+#form img,
 #Start img{
     width: 40vw;
 }
 
-#Historia img{
-    width: 30vw;
-}
-
-#utövare img{
-    width: 30vw;
-}
-
-#main img{
-    width: 50vw;
-}
-
-#form img{
-    width: 50vw;
-}
-
 #info img{
-    width: 50vw;
+    width: 25vw;
 }
 
 /* Ändrar bakgrundsfärgen på start sidorna */
 #Start >.wrapper{
     background-color: #a9a9a9;
+}
+
+#main >.wrapper{
+    background-color: #ffebff;
 }
 
 
@@ -86,7 +82,8 @@ body{
 }
 
 /* Delar upp aside i två delar så att man kan lägga mer info */
-#main aside{
+#main aside,
+#info aside{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -94,11 +91,13 @@ body{
     "section1 section2";
 }
 
-#main section:nth-child(1){
+#main section:nth-child(1),
+#info section:nth-child(1){
     grid-area: section1;
 }
 
-#main section:nth-child(2){
+#main section:nth-child(2),
+#info section:nth-child(2){
     grid-area: section2;
 }
 
@@ -185,6 +184,22 @@ ul li a{
     text-decoration: none; 
     /* Ändar storleken på text */
     font-size: 25px;
+}
+
+a:visited{
+    color: #f8f8f8;
+}
+
+a:hover{
+    background: #a9a9a9;
+}
+
+a:focus{
+    border: 1px dotted #000;
+}
+
+a:active{
+    font-size: 24px;
 }
 
 /* Flyttar den femte text elemtet till höger */
