@@ -15,36 +15,43 @@
     margin: 0;
 }
 
-/* Tar bort margin bodyn och griden  */
+/* Tar bort margin runt bodyn och griden  */
 body{
     margin: 0;
 }
-/* Ändrar storleken på bilder på olika sidor */
 
+/* Ändrar storleken på bilder på historia,Utövar till 25vw */
 #Historia img,
 #utövare img{
     width: 25vw;
 }
 
+/* Ändrar storleken på bilder på main, start till 50vw */
 #main img,
-#form img,
 #Start img{
     width: 40vw;
 }
 
-#info img{
+/* Ändrar storleken på bilder på info,form till 25vw */
+#info img,
+#form img{
     width: 25vw;
 }
 
-/* Ändrar bakgrundsfärgen på start sidorna */
+/* Ändrar bakgrundsfärgen på start  */
 #Start >.wrapper{
     background-color: #a9a9a9;
 }
 
+/* Ändrar bakgrundsfärgen på main  */
 #main >.wrapper{
-    background-color: #ffebff;
+    background-color: #a9a9a9;
 }
 
+/* Ändrar bakgrundsfärgen på form  */
+#form >.wrapper{
+    background-color: #ffecff;
+}
 
 /* Skapar ett nytt grid för dom 3 "start" sidorna */
 #main >.wrapper,
@@ -117,8 +124,8 @@ body{
 /* iframe */
 iframe{
     /* Ändrar storleken på iframe */
-    height: 20em;
-    width: 35em;
+    height: 15em;
+    width: 25em;
 }
 
 /* Misc */
@@ -186,6 +193,7 @@ ul li a{
     font-size: 25px;
 }
 
+/* LoVe Focus HAte regler */
 a:visited{
     color: #f8f8f8;
 }
@@ -202,11 +210,6 @@ a:active{
     font-size: 24px;
 }
 
-/* Flyttar den femte text elemtet till höger */
-nav li:nth-child(5){
-    float: right;
-}
-
 
 /* Tabel */
 table{
@@ -214,8 +217,14 @@ table{
     border-spacing: 0;
     margin-left: 25%;
     font-size: 20px;
+    /* colapsar gränserna runt tabellen in till en gräns */
+    border-collapse: collapse;
 }
 
+table,td,th{
+    /* skapar en gräns runt tabellen */
+    border: 1px solid black;
+}
 
 /* Form */
 textarea{

@@ -36,16 +36,21 @@
             <form action="tack.html" method="post">
                 <!--Sections gör så att vi kan dela upp form inuti css-->
                 <section>
+                    <!--<label> skapar en text över input-->
                     <label for="fname">Förnamn:</label><br>
+                    <!--<text> skapar en text yta-->
                     <input type="text" id="fname" name="fname"><br>
                     <label for="Ename">Efternamn:</label><br>
                     <input type="text" id="Ename" name="Ename"><br>
                     <label for="email"> Skriv in din email:</label><br>
+                    <!--<email> skapar en yta där bara mail adresser kan skirvas in-->
                     <input type="email" id="email" name="email"><br>
                     <label for="lösenord">Lösenord:</label><br>
+                    <!--<password> Skapar en yta med gömd text som är till för lösenord-->
                     <input type="password" id="lösenord" name="lösenord">
 
                     <h4> Vad tycker du om hemsidan? </h4>
+                    <!--<radio> skapar en knapp, man kan bara välga en radio val-->
                     <input type="radio" id="bra" name="rew" value="bra">
                     <label for="bra">Bra</label><br>
                     <input type="radio" id="dåligt" name="rew" value="dåligt">
@@ -55,15 +60,18 @@
                 </section>
                 <section>
                     <h5> Vilka sidor har du läst? </h5>
+                    <!--<checkbox> Gör flervals knappar-->
                     <input type="checkbox" id="Start" name="Start" value="sidor">
                     <label for="Start"> Jag har sätt start sidorna </label><br>
                     <input type="checkbox" id="sidor1" name="sidor1" value="sidor1">
                     <label for="sidor1"> Jag har läst Moto GP </label><br>
                     <input type="checkbox" id="sidor2" name="sidor2" value="Sidor2">
                     <label for="sidor2"> Jag har läst Fotbolls sidor</label> <br><br>
-    
+                    
                     <label for="textarea"> Förslag om sport: </label><br>
+                    <!--<textarea> gör en större skrivyta-->
                     <textarea id="textarea" name="textarea" > Skriv ditt förslag här.... </textarea><br>
+                    <!--<submit> schikar in svaren till en server-->
                     <input type="submit" value="Submit">
                 </section>
             </form>
