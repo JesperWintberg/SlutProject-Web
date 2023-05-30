@@ -38,9 +38,9 @@ body{
     width: 25vw;
 }
 
-/* Ändrar bakgrundsfärgen på start  */
+/* Ändrar bakgrundsfärgen på start med hjälp av rgb(red,green,blue)  */
 #Start >.wrapper{
-    background-color: #a9a9a9;
+    background-color: rgb(115, 119, 116);
 }
 
 /* Ändrar bakgrundsfärgen på main  */
@@ -57,16 +57,22 @@ body{
 #main >.wrapper,
 #form >.wrapper,
 #info >.wrapper{
+    /* (display: grid;) visar sidan i grid */
     display: grid;
+    /* Gör en två spalt layout som tar upp halva sidan var */
     grid-template-columns: 1fr 1fr;
+    /* Sätter upp 4 rader med automatisk storlek */
     grid-template-rows: auto auto auto auto auto;
+    /* Anger dom olika delarna av gridet så att man kan dela upp det */
     grid-template-areas:
     "header header"
     "nav nav"
     "main main"
     "aside aside"
     "footer footer";
+    /* Justerar texten på sidan mot mitten */
     text-align: center;
+    /* Tar bort gränsutrymme runt sidan */
     margin: 0;
 }
 
