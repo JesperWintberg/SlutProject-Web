@@ -20,13 +20,17 @@
             </ul>
         </nav>
         <main>
-            <h2> Formulär </h2>
-            <p>
-                För att vi ska kunna utveckla Sport fokus så behöver vi din hjälp. HAr du en sport som du känner att vi borde lyfta upp
-                eller som du bara tycker är rolig? Skriv in ditt förslag i vårat fomulär så kommer vi ta en tit och see om sporten passar
-                våran hemisda. Kom ihåg att vi inte kan ha alla sporter på hemisdan så om din sport inte lyfts upp så behöver du inte vara lesen.
-            </p>
-            <img src="/Bilder/hide-the-pain-harold.jpg" alt="Hide the pain harold">
+            <section>
+                <h2> Formulär </h2>
+                <p>
+                    För att vi ska kunna utveckla Sport fokus så behöver vi din hjälp. HAr du en sport som du känner att vi borde lyfta upp
+                    eller som du bara tycker är rolig? Skriv in ditt förslag i vårat fomulär så kommer vi ta en tit och see om sporten passar
+                    våran hemisda. Kom ihåg att vi inte kan ha alla sporter på hemisdan så om din sport inte lyfts upp så behöver du inte vara lesen.
+                </p>
+            </section>
+            <section>
+                <img src="/Bilder/hide-the-pain-harold.jpg" alt="Hide the pain harold">
+            </section>
         </main>
         <aside>
             <h3> Ge förslag på sporter du vill see </h3>
@@ -35,7 +39,6 @@
             <!--action schikar användare till hemsidan tack.html efter dom har svarat på forum-->
             <form action="tack.html" method="post">
                 <!--Sections gör så att vi kan dela upp form inuti css-->
-                <section>
                     <!--<label> skapar en text över input-->
                     <label for="fname">Förnamn:</label><br>
                     <!--<text> skapar en text yta-->
@@ -57,8 +60,7 @@
                     <label for="dåligt">Dåligt</label><br>
                     <input type="radio" id="ok" name="rew" value="ok">
                     <label for="ok">Helt okej</label><br>   
-                </section>
-                <section>
+
                     <h5> Vilka sidor har du läst? </h5>
                     <!--<checkbox> Gör flervals knappar-->
                     <input type="checkbox" id="Start" name="Start" value="sidor">
@@ -73,7 +75,6 @@
                     <textarea id="textarea" name="textarea" > Skriv ditt förslag här.... </textarea><br>
                     <!--<submit> schikar in svaren till en server-->
                     <input type="submit" value="Submit">
-                </section>
             </form>
         </aside>
         <footer>

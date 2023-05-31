@@ -77,7 +77,7 @@ body{
 }
 
 /* Skapar ett nytt grid inuti form, så att man kan dela upp aside sectionen i två delar  */
-#form form{
+#form main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -200,16 +200,20 @@ ul li a{
 }
 
 /* LoVe Focus HAte regler */
+a:link{
+    color: #ffecff;
+}
+
 a:visited{
     color: #f8f8f8;
 }
 
-a:hover{
-    background: #a9a9a9;
-}
-
 a:focus{
     border: 1px dotted #000;
+}
+
+a:hover{
+    background: #a9a9a9;
 }
 
 a:active{
